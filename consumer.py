@@ -14,7 +14,7 @@ channel = connection.channel()
 def callback(ch, method, properties, msg):				# running task
 	print(" [x] Received %r" % msg)
 	wm_parser.parse(msg)						# parsing di cio' che arriva
-	out_file = open("log.txt","a")					# log di ciò che arriva
+	out_file = open("log.txt","a")					# log di cio' che arriva
 	out_file.write(msg)
 	out_file.close()
 

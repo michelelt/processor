@@ -10,7 +10,7 @@ channel = connection.channel()
 
 channel.queue_declare(queue='coda', durable=True)
 
-with open("msg") as f:								# Leggiamo il messaggio da un file che viene più comodo
+with open("msg") as f:								# Leggiamo il messaggio da un file che viene piu' comodo
 	msg = f.readlines()
 
 channel.basic_publish(exchange='', routing_key='coda', body=msg[0].strip())	# Invio a RMQ

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import json
-
+import wm_db
 CMDs = {'WEIGHT_CHANGED':'0'}						# dictionary con la lista dei comandi
 
 def parse(msg):
@@ -12,8 +12,9 @@ def parse(msg):
 	print "Valid Json"
 
 	if arr['CMD'] == CMDs['WEIGHT_CHANGED']:			# "switch" sui diversi comandi che arrivano
-		print "Received command: WEIGHT_CHANGED"
+		print "Received command: WEIGHT_CHANGED - new weight: "+ arr['w'] +"kg"
 		#Qui check sui dati e scrittura su DB
+		wm_db.insert_weight(arr['box_id'], arr['w'])
 	else:
-		print "Comando non riconosciuto"
+		print "Command not found"
 

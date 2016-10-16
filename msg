@@ -1,1 +1,1 @@
-{"CMD":"0","ID_device":"000001","box_id":"1","w":"3"}
+{"CMD":"0","controller_id":"1","box_id":"2","w":"2500"}

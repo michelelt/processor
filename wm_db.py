@@ -57,7 +57,7 @@ def boxExists(box_id):
 	return result
 
 
-# Restituisce un booleano sulla presenza o meno del box nel db
+# Restituisce un booleano sulla presenza o meno del controller nel db
 def controllerExists(controller_id):
 	cnx = mysql.connector.connect(user=_user, password=_password, host=_host, database=_database)
 	cursor = cnx.cursor(buffered=True)

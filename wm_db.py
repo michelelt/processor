@@ -2,7 +2,7 @@ import mysql.connector
 
 _user		= "root"
 _password	= "washomatic"
-_host		= "52.210.163.71"
+_host		= "52.209.57.241" #elastic IP of december 2016
 _database	= "washomatic"
 
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import pika
 credentials = pika.PlainCredentials('root', 'washomatic')			# Connessione con RMQ
-parameters = pika.ConnectionParameters('52.210.163.71',
+parameters = pika.ConnectionParameters('52.209.57.241',
                                        5672,
                                        '/',
                                        credentials)

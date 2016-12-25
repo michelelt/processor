@@ -4,7 +4,7 @@ import wm_parser							# modulo locale
 
 import pika								# import e connessione RMQ
 credentials = pika.PlainCredentials('root', 'washomatic')
-parameters = pika.ConnectionParameters('52.210.163.71',
+parameters = pika.ConnectionParameters('52.209.57.241',
                                        5672,
                                        '/',
                                        credentials)
